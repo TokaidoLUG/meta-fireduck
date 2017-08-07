@@ -25,6 +25,7 @@ YOCTO_LAYERS = " \
 #-----------------------------------------------------
 FIREDUCK_CORE_LAYERS = " \
   ${METADIR}/meta-efl-rebuilding \
+  ${METADIR}/meta-fireduck \
   "
 
 # These are the direct dependencies of the AGL CORE Layers
