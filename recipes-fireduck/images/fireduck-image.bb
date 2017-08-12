@@ -13,7 +13,7 @@ IMAGE_INSTALL_append = " \
     packagegroup-fireduck-jp \
     "
 
-IMAGE_INSTALL  += " udev-extraconf " 
+IMAGE_INSTALL  += " udev-extraconf chromium "
 
 #IMAGE_INSTALL += "midori takao-fonts mpv jack2" 
 
