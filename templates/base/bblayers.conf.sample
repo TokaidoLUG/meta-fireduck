@@ -15,20 +15,19 @@ METADIR  := "${@os.path.abspath('##OEROOT##/..')}"
 YOCTO_LAYERS = " \
   ${METADIR}/poky/meta \
   ${METADIR}/poky/meta-poky \
+  ${METADIR}/meta-openembedded/meta-oe \
+  ${METADIR}/meta-openembedded/meta-gnome \
   "
-#  this is added for the boards where necessary, not globally
-#  ${METADIR}/poky/meta-yocto-bsp \
 #
-# These are the AGL CORE Layers that make up the basis
-# - they create a minimal bootable filesystem
-#   with some automotive tools/libraries
+# These are the CORE Layers that make up the basis
 #-----------------------------------------------------
 FIREDUCK_CORE_LAYERS = " \
+  ${METADIR}/meta-browser \
   ${METADIR}/meta-efl-rebuilding \
   ${METADIR}/meta-fireduck \
   "
 
-# These are the direct dependencies of the AGL CORE Layers
+# These are the direct dependencies of the CORE Layers
 #---------------------------------------------------------
 FIREDUCK_CORE_DEPENDENCY_LAYERS = " \
   "
