@@ -1,2 +1,2 @@
 Common targets are:
-    efl-image
+    fireduck-image
