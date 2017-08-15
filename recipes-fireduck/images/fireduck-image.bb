@@ -13,8 +13,10 @@ IMAGE_INSTALL_append = " \
     packagegroup-fireduck-jp \
     "
 
-IMAGE_INSTALL  += " udev-extraconf chromium "
+IMAGE_INSTALL  += " udev-extraconf firefox "
+
+#IMAGE_INSTALL  += " gdb "
 
 #IMAGE_INSTALL += "midori takao-fonts mpv jack2" 
 
-
+IMAGE_FEATURES_append = " dev-pkgs tools-sdk tools-debug debug-tweaks ssh-server-openssh "
