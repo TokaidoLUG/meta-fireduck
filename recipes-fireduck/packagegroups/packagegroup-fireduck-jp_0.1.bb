@@ -17,5 +17,6 @@ TTF_FONTS = " \
     "
 
 RDEPENDS_${PN} += " \
+    base-language-jp \
     ${TTF_FONTS} \
     "
