@@ -15,21 +15,23 @@ METADIR  := "${@os.path.abspath('##OEROOT##/..')}"
 YOCTO_LAYERS = " \
   ${METADIR}/poky/meta \
   ${METADIR}/poky/meta-poky \
-  ${METADIR}/meta-openembedded/meta-oe \
-  ${METADIR}/meta-openembedded/meta-gnome \
   "
 #
 # These are the CORE Layers that make up the basis
 #-----------------------------------------------------
 FIREDUCK_CORE_LAYERS = " \
+  ${METADIR}/meta-openembedded/meta-oe \
+  ${METADIR}/meta-openembedded/meta-networking \
+  ${METADIR}/meta-openembedded/meta-gnome \
+  ${METADIR}/meta-openembedded/meta-python \
   ${METADIR}/meta-browser \
   ${METADIR}/meta-efl-rebuilding \
-  ${METADIR}/meta-fireduck \
   "
 
 # These are the direct dependencies of the CORE Layers
 #---------------------------------------------------------
 FIREDUCK_CORE_DEPENDENCY_LAYERS = " \
+  ${METADIR}/meta-fireduck \
   "
 
 ####################
