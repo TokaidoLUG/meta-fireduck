@@ -2,6 +2,5 @@
 #---------------------------------
 
 # Set DISTRO for Fireduck OS
-#DISTRO = "poky-fireduck"
+DISTRO = "fireduck"
 
-#require conf/include/base-fireduck.inc
