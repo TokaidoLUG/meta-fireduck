@@ -10,7 +10,6 @@ IMAGE_LINGUAS += " ja-jp "
 #Enlightenment
 IMAGE_INSTALL_append = " \
     packagegroup-enlightenment \
-    packagegroup-mozilla \
     packagegroup-fireduck-jp \
     "
 
