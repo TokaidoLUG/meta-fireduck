@@ -9,15 +9,20 @@ IMAGE_LINGUAS += " ja-jp "
 
 #Enlightenment
 IMAGE_INSTALL_append = " \
-    packagegroup-enlightenment \
+    packagegroup-fonts-truetype \
     packagegroup-fireduck-jp \
+     \
     "
+
+#IMAGE_INSTALL_append = " \
+#    packagegroup-lxqt-base \
+#"
 
 #IMAGE_INSTALL  += " udev-extraconf "
 IMAGE_INSTALL  += " network-manager-applet "
 
 
-#IMAGE_INSTALL  += " gdb "
+#IMAGE_INSTALL  += " gdb openbox-dbg "
 
 #IMAGE_INSTALL += "midori takao-fonts mpv jack2" 
 
