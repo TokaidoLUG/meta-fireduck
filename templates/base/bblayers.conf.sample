@@ -25,6 +25,7 @@ FIREDUCK_CORE_LAYERS = " \
   ${METADIR}/meta-openembedded/meta-gnome \
   ${METADIR}/meta-openembedded/meta-python \
   ${METADIR}/meta-openembedded/meta-multimedia \
+  ${METADIR}/meta-qt5 \
   "
 
 # These are the direct dependencies of the CORE Layers
