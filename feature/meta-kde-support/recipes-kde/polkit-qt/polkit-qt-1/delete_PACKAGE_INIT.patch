@@ -1,0 +1,12 @@
+diff --git a/PolkitQt-1Config.cmake.in b/PolkitQt-1Config.cmake.in
+old mode 100644
+new mode 100755
+index f39480c..8d8e65b
+--- a/PolkitQt-1Config.cmake.in
++++ b/PolkitQt-1Config.cmake.in
+@@ -1,5 +1,3 @@
+-@PACKAGE_INIT@
+-
+ # Config file for POLKITQT-1
+ # The following variables are defined:
+ # POLKITQT-1_FOUND       - True if POLKITQT-1 has been found.

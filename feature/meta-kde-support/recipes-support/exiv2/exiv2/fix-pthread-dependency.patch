@@ -1,0 +1,27 @@
+diff --git a/config/exiv2.pc.cmake b/config/exiv2.pc.cmake
+old mode 100644
+new mode 100755
+index 256f8ac..6f721d8
+--- a/config/exiv2.pc.cmake
++++ b/config/exiv2.pc.cmake
+@@ -7,5 +7,5 @@ Name: exiv2
+ Description: Exif and IPTC metadata library and tools
+ Version: @PACKAGE_VERSION@
+ URL: @PACKAGE_URL@
+-Libs: -L${libdir} -lexiv2 @EXV_LIB_STATIC@
++Libs: -L${libdir} -lexiv2 @EXV_LIB_STATIC@ -lpthread
+ Cflags: -I${includedir}
+diff --git a/config/exiv2.pc.in b/config/exiv2.pc.in
+old mode 100644
+new mode 100755
+index e74b18b..d66059e
+--- a/config/exiv2.pc.in
++++ b/config/exiv2.pc.in
+@@ -6,6 +6,6 @@ includedir=@includedir@
+ Name: exiv2
+ Description: Image metadata library and tools
+ Version: @PACKAGE_VERSION@
+-Libs: -L${libdir} -lexiv2 @EXV_LIB_STATIC@
++Libs: -L${libdir} -lexiv2 @EXV_LIB_STATIC@ -lpthread
+ Libs.private: @EXPAT_LDFLAGS@ @SSH_LDFLAGS@ @CURL_LDFLAGS@ @LTLIBINTL@ @LTLIBICONV@ @LIBS@ @EXPAT_LIBS@ @SSH_LIBS@ @CURL_LIBS@
+ Cflags: -I${includedir}

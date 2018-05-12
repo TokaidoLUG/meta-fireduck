@@ -1,0 +1,8 @@
+FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
+
+SRC_TRI_append = "  \
+                  file://fix-pthread-dependency.patch \
+                 "
+
+EXTRA_OECMAKE += " -DEXIV2_ENABLE_BUILD_SAMPLES=off "
+
